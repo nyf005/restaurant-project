@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpacPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -26,4 +27,11 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpacPlugin({
+      title: "Hetty's Cooking",
+      filename: "index.html",
+      template: "src/template.html",
+    }),
+  ],
 };
