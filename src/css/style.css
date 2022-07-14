@@ -6,6 +6,21 @@
   src: url(../assets/fonts/Niconne-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,12 +31,13 @@ body {
   background: url(../assets/img/bg.jpg) no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   background-size: cover;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins-Regular";
   font-size: 16px;
   color: #fff;
 }
 
 h1 {
+  font-family: "Poppins-Bold";
   font-size: 3rem;
 }
 
@@ -109,4 +125,11 @@ main button:last-child:hover {
 main button:active {
   width: 7rem;
   padding: 0.5rem;
+}
+
+#callToActionBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
