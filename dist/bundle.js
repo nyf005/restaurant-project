@@ -126,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-page */ \"./src/load-page.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _assets_img_bg_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/bg.jpg */ \"./src/assets/img/bg.jpg\");\n\n\n\n\n(0,_load_page__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _assets_img_bg_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/img/bg.jpg */ \"./src/assets/img/bg.jpg\");\n/* harmony import */ var _load_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./load-page */ \"./src/load-page.js\");\n/* harmony import */ var _section_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./section/home */ \"./src/section/home.js\");\n/* harmony import */ var _section_our_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./section/our-menu */ \"./src/section/our-menu.js\");\n/* harmony import */ var _section_about_us__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./section/about-us */ \"./src/section/about-us.js\");\n/* harmony import */ var _section_contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./section/contact */ \"./src/section/contact.js\");\n\n\n\n\n\n\n\n\n(0,_load_page__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\nconst content = document.getElementById(\"content\");\nconst menuItems = document.querySelectorAll(\".menu-item\");\n\nfunction setActiveMenu(newActive) {\n  const currentActive = document.getElementsByClassName(\"active\");\n  if (newActive != currentActive) {\n    currentActive[0].classList.toggle(\"active\");\n    newActive.classList.toggle(\"active\");\n  }\n}\n\nmenuItems.forEach((menuItem) => {\n  menuItem.addEventListener(\"click\", (e) => {\n    setActiveMenu(e.target);\n    switch (e.target.textContent) {\n      case \"OUR MENU\":\n        content.replaceChild((0,_section_our_menu__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(), content.childNodes[1]);\n        break;\n\n      case \"ABOUT US\":\n        content.replaceChild((0,_section_about_us__WEBPACK_IMPORTED_MODULE_5__[\"default\"])(), content.childNodes[1]);\n        break;\n\n      case \"CONTACT\":\n        content.replaceChild((0,_section_contact__WEBPACK_IMPORTED_MODULE_6__[\"default\"])(), content.childNodes[1]);\n        break;\n\n      default:\n        content.replaceChild((0,_section_home__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(), content.childNodes[1]);\n    }\n  });\n});\n\n\n//# sourceURL=webpack://restaurant-project/./src/index.js?");
 
 /***/ }),
 
@@ -137,6 +137,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadPage)\n/* harmony export */ });\n/* harmony import */ var _section_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./section/header */ \"./src/section/header.js\");\n/* harmony import */ var _section_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./section/home */ \"./src/section/home.js\");\n\n\n\nfunction loadPage() {\n  const content = document.getElementById(\"content\");\n  content.append((0,_section_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), (0,_section_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n\n  return content;\n}\n\n\n//# sourceURL=webpack://restaurant-project/./src/load-page.js?");
+
+/***/ }),
+
+/***/ "./src/section/about-us.js":
+/*!*********************************!*\
+  !*** ./src/section/about-us.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createAboutUs)\n/* harmony export */ });\nfunction createAboutUs() {\n  console.log(\"About Us Page\");\n  return document.createElement(\"div\");\n}\n\n\n//# sourceURL=webpack://restaurant-project/./src/section/about-us.js?");
+
+/***/ }),
+
+/***/ "./src/section/contact.js":
+/*!********************************!*\
+  !*** ./src/section/contact.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createContact)\n/* harmony export */ });\nfunction createContact() {\n  console.log(\"Contact Page\");\n  return document.createElement(\"div\");\n}\n\n\n//# sourceURL=webpack://restaurant-project/./src/section/contact.js?");
 
 /***/ }),
 
@@ -157,6 +177,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome() {\n  const main = document.createElement(\"main\");\n  const pWelcome = document.createElement(\"p\");\n  const h1 = document.createElement(\"h1\");\n  const h3 = document.createElement(\"h3\");\n  const callToActionBtns = document.createElement(\"div\");\n  const btnOurMenu = document.createElement(\"button\");\n  const btnAboutUs = document.createElement(\"button\");\n\n  pWelcome.textContent = \"Welcome to Hetty's Kitchen Restaurant\";\n  pWelcome.setAttribute(\"id\", \"welcome\");\n\n  h1.textContent = \"Eat healthy and Natural Food\";\n\n  h3.innerHTML = `Hetty's Cooking is a restaurant, bar and coffee roastery located on\n  Ivory Coast. <br />We have awesome recipes and the most talented chefs in town.`;\n\n  callToActionBtns.setAttribute(\"id\", \"callToActionBtns\");\n  btnOurMenu.textContent = \"OUR MENU\";\n  btnAboutUs.textContent = \"ABOUT US\";\n  callToActionBtns.append(btnOurMenu, btnAboutUs);\n\n  main.append(pWelcome, h1, h3, callToActionBtns);\n\n  return main;\n}\n\n\n//# sourceURL=webpack://restaurant-project/./src/section/home.js?");
+
+/***/ }),
+
+/***/ "./src/section/our-menu.js":
+/*!*********************************!*\
+  !*** ./src/section/our-menu.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createOurMenu)\n/* harmony export */ });\nfunction createOurMenu() {\n  console.log(\"Our Menu Page\");\n  return document.createElement(\"div\");\n}\n\n\n//# sourceURL=webpack://restaurant-project/./src/section/our-menu.js?");
 
 /***/ }),
 
