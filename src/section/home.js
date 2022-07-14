@@ -1,4 +1,4 @@
-export default function createMain() {
+export default function createHome() {
   const main = document.createElement("main");
   const pWelcome = document.createElement("p");
   const h1 = document.createElement("h1");

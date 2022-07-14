@@ -25,6 +25,7 @@ export default function createHeader() {
   logo.setAttribute("id", "logo");
   menu.setAttribute("id", "menu");
   menuHome.classList.add("menu-item");
+  menuHome.classList.add("active");
   menuOurMenu.classList.add("menu-item");
   menuAboutUs.classList.add("menu-item");
   menuContact.classList.add("menu-item");
