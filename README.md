@@ -10,8 +10,8 @@ A restaurant page using Javascript to generate entire contents of the website
 
 ## Links
 
-[Try demo here!](https://nyf005.github.io/sign-up-form/)
-[Link to the Assignment](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
+* [Try demo here!](https://nyf005.github.io/restaurant-project/)
+* [Link to the Assignment](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
 ## Screenshots
 
