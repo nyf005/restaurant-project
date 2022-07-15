@@ -3,7 +3,6 @@ import "./assets/img/bg.jpg";
 import loadPage from "./load-page";
 import createHome from "./section/home";
 import createOurMenu from "./section/our-menu";
-import createAboutUs from "./section/about-us";
 import createContact from "./section/contact";
 
 loadPage();
@@ -25,10 +24,6 @@ menuItems.forEach((menuItem) => {
     switch (e.target.textContent) {
       case "OUR MENU":
         content.replaceChild(createOurMenu(), content.childNodes[1]);
-        break;
-
-      case "ABOUT US":
-        content.replaceChild(createAboutUs(), content.childNodes[1]);
         break;
 
       case "CONTACT":

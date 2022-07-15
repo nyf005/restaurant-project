@@ -20,7 +20,7 @@ const meals = [
       "Parmesan",
       "Wheat",
     ],
-    price: "$12.99",
+    price: "$13",
     image: BreakfastCasserole,
   },
   {
@@ -34,7 +34,7 @@ const meals = [
       "Mustard",
       "Lemon",
     ],
-    price: "$12.99",
+    price: "$19",
     image: BroiledSalmon,
   },
   {
@@ -47,7 +47,7 @@ const meals = [
       "Fresh chives",
       "Hot sauce",
     ],
-    price: "$12.99",
+    price: "$8",
     image: BaconEggCup,
   },
   {
@@ -62,7 +62,7 @@ const meals = [
       "Lemon",
       "Parsley",
     ],
-    price: "$12.99",
+    price: "$10",
     image: LemonGarlicShrimps,
   },
   {
@@ -75,7 +75,7 @@ const meals = [
       "orange juice",
       "Honey or taste",
     ],
-    price: "$12.99",
+    price: "$12",
     image: FrozenFruitSmoothie,
   },
   {
@@ -86,7 +86,7 @@ const meals = [
       "Black pepper",
       "Parsley salsa",
     ],
-    price: "$12.99",
+    price: "$9",
     image: OvenBakedSalmon,
   },
   {
@@ -99,7 +99,7 @@ const meals = [
       "Dried oregano",
       "Black pepper",
     ],
-    price: "$12.99",
+    price: "$11",
     image: ParmesanChicken,
   },
   {
@@ -111,7 +111,7 @@ const meals = [
       "Spinach",
       "Parmesan",
     ],
-    price: "$12.99",
+    price: "$7",
     image: ChickenSaltimbocca,
   },
 ];

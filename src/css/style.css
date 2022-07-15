@@ -33,7 +33,7 @@
 }
 
 body {
-  background: url(../assets/img/bg.jpg) no-repeat;
+  background: url(../assets/img/bg.jpg) center no-repeat;
   background-size: cover;
   font-family: "Poppins-Regular";
   font-size: 16px;
@@ -96,8 +96,8 @@ header {
 }
 
 main {
-  height: 90vh;
-  padding: 0 5rem;
+  min-height: 90vh;
+  padding: 2rem 5rem;
   text-align: center;
   display: grid;
   place-content: center;
@@ -151,7 +151,7 @@ main button:active {
 }
 
 #our-menu {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .card {
