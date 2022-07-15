@@ -5,9 +5,9 @@ export default function createHome() {
   const h3 = document.createElement("h3");
   const callToActionBtns = document.createElement("div");
   const btnOurMenu = document.createElement("button");
-  const btnAboutUs = document.createElement("button");
+  const btnGetInTouch = document.createElement("button");
 
-  pWelcome.textContent = "Welcome to Hetty's Kitchen Restaurant";
+  pWelcome.textContent = "Welcome to Hetty's Cooking Restaurant";
   pWelcome.setAttribute("id", "welcome");
 
   h1.textContent = "Eat healthy and Natural Food";
@@ -17,8 +17,10 @@ export default function createHome() {
 
   callToActionBtns.setAttribute("id", "callToActionBtns");
   btnOurMenu.textContent = "OUR MENU";
-  btnAboutUs.textContent = "ABOUT US";
-  callToActionBtns.append(btnOurMenu, btnAboutUs);
+  btnOurMenu.setAttribute("id", "menuBtn");
+  btnGetInTouch.textContent = "GET IN TOUCH";
+  btnGetInTouch.setAttribute("id", "contactBtn");
+  callToActionBtns.append(btnOurMenu, btnGetInTouch);
 
   main.append(pWelcome, h1, h3, callToActionBtns);
 

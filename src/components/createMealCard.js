@@ -23,7 +23,7 @@ export default function createMealCard(meal) {
   infosDiv.append(foodName, foodIngredients);
 
   const priceTag = document.createElement("span");
-  priceTag.className = "price";
+  priceTag.className = "price-tag";
   priceTag.textContent = meal.price;
 
   card.append(img, infosDiv, priceTag);
