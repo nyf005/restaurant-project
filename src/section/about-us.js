@@ -1,4 +1,4 @@
 export default function createAboutUs() {
-  console.log("About Us Page");
-  return document.createElement("div");
+  const main = document.createElement("main");
+  return main;
 }
