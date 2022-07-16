@@ -54,7 +54,7 @@ export default function createContact() {
 
   const submitBtn = document.createElement("button");
   submitBtn.setAttribute("type", "submit");
-  submitBtn.textContent = "Envoyer";
+  submitBtn.textContent = "Send";
 
   const nameLabel = document.createElement("label");
   const emailLabel = document.createElement("label");
